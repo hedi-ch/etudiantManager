@@ -1,3 +1,14 @@
+/*
+Etudiant(@EtudiantId,LastName,FirstName,#ClassId,#FilierId);
+Class(@ClassId,ClassName,#FilierId);
+Filier(@FilierId,FilierName);
+Matier(@MatierId,MatierName,coefficient,#FilierId)
+Notes(@[#EtudiantId,#MatierId],Note);
+Administration(@adminUserName,password);//admin admin default user
+*/
+-----------------------------------------------------------------------
+
+
 CREATE TABLE Etudiant (
     EtudiantId Number NOT NULL,
     LastName varchar2(25),
