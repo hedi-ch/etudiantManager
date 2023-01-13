@@ -6,4 +6,5 @@
  *
  */
 module etudiantManager {
+	requires java.sql;
 }
