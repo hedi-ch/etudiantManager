@@ -58,3 +58,31 @@ exeption
 when no data found then return false;
 end ;
 /
+---------------------------------------------------------------------------
+CREATE or replace function deleteEtudiant(in etudiantId)  as
+DELETE FROM Etudiant ,Notes  
+WHERE Notes.EtudiantId=etudiantId  and Etudiant.EtudiantId = etudiantId;
+---------------------------------------------------------------------------
+CREATE or replace function deleteClass(in classId)  as
+DELETE FROM Class  
+WHERE Class.ClassId=classId;
+---------------------------------------------------------------------------
+CREATE or replace function deleteFilier(in filierId)  as
+DELETE FROM Filier  
+WHERE Filier.FilierId=filierId ;
+---------------------------------------------------------------------------
+CREATE or replace function deleteNote(in etudiantId,in matierId)  as
+DELETE FROM Notes  
+WHERE Notes.EtudiantId=etudiantId  and Notes.MatierId = matierId;
+---------------------------------------------------------------------------
+CREATE or replace function deleteMatier(in matierId)  as
+DELETE FROM Matier  
+WHERE MatierId=matierid;
+---------------------------------------------------------------------------
+CREATE or replace function deleteEtudiant(in etudiantId)  as
+DELETE FROM Etudiant ,Notes  
+WHERE Notes.EtudiantId=etudiantId  and Etudiant.EtudiantId = etudiantId;
+---------------------------------------------------------------------------
+
+
+
