@@ -1,43 +1,43 @@
 package clas;
 
-import java.util.ArrayList;
+//import java.util.ArrayList; line 8
 public class Etudiant {
 
-private String name;
-private ArrayList<Matier> matierList;
-private Filier filier;
-private Classe classe;
-/*
---use this code if you add login and register 
 private int id;
-private String password;
-*/
+private String Firstname;
+private String Lastname;
+//private ArrayList<Matier> matierList; line 37 and class Matier
+private String filierName;
+private String classeName;
+
 
 Etudiant(){
-	this.name="";
-	this.filier=null;
-	this.classe=null;
+	this.Lastname="";
+	filierName="";
+	classeName="";
 }
-Etudiant(String name,Filier filier){
-	this.name=name;
-	this.filier=filier;
-	this.classe=null;
+Etudiant(int id,String Lastname,String Firstname,String filier){
+	this.Lastname=Lastname;
+	this.Firstname=Firstname;
+	filierName=filier;
+	this.classeName="";
 }
-Etudiant(String name,Filier filier,Classe classe){
-	this.name=name;
-	this.filier=filier;
-	this.classe=classe;
+Etudiant(int id,String Lastname,String Firstname,String filier,String classe){
+	this.Firstname=Firstname;
+	this.Lastname=Lastname;
+	this.filierName=filier;
+	this.classeName=classe;
 }
 
 
 public String getName() {
-	return this.name;
+	return this.Lastname+" "+this.Firstname;
 }
 
 public String getClassName() {
-	return this.classe.getClassName();
+	return this.classeName;
 }
-
+/*
 public double getMoyen() {
 	double matierSomme=0;
 	double cofSomme=0;
@@ -47,14 +47,14 @@ public double getMoyen() {
 	}
 	return matierSomme/cofSomme;
 }
-
+*/
 public String getFilier() {
-	return this.filier.getName();
+	return this.filierName;
 }
 
 
 public String toString() {
-	return "etudiant name: "+this.name+" filier"+this.getFilier()+" classe :"+this.getClassName();
+	return "id: "+this.id+" etudiant name: "+this.getName()+" filier :"+this.getFilier()+" classe : "+this.getClassName();
 }
 
 }
