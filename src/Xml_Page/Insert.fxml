@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="629.0" style="-fx-background-color: #0598FF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InsertController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="197.0" style="-fx-background-color: #0756B0;">
+         <children>
+            <VBox layoutY="123.0" prefHeight="194.0" prefWidth="196.0">
+               <children>
+                  <Button id="insertbn" mnemonicParsing="false" onAction="#insertSwitch" prefHeight="48.0" prefWidth="196.0" style="-fx-background-radius: 25px;" styleClass="btn-home" stylesheets="@style.css" text="insert" textFill="WHITE" />
+                  <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="update info" textFill="WHITE" />
+                  <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="delete" textFill="WHITE" />
+                  <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="search" textFill="WHITE" />
+                  <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="moyen" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="236.0" layoutY="52.0" prefHeight="142.0" prefWidth="156.0" style="-fx-background-radius: 50%;" styleClass="inser_item" stylesheets="@style.css">
+         <children>
+            <Text fill="WHITE" layoutX="40.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class" wrappingWidth="75.234375">
+               <font>
+                  <Font size="27.0" />
+               </font></Text>
+            <Button layoutX="63.0" layoutY="104.0" mnemonicParsing="false" onAction="#insertClass" prefHeight="24.0" prefWidth="29.0" style="-fx-background-radius: 100%;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="417.0" layoutY="52.0" onMouseClicked="#insertFilier" prefHeight="142.0" prefWidth="156.0" style="-fx-background-radius: 50%;" styleClass="inser_item" stylesheets="@style.css">
+         <children>
+            <Text fill="WHITE" layoutX="45.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filier">
+               <font>
+                  <Font size="27.0" />
+               </font></Text>
+            <Button layoutX="63.0" layoutY="104.0" mnemonicParsing="false" onAction="#insertFilier" prefHeight="24.0" prefWidth="29.0" style="-fx-background-radius: 100%;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="236.0" layoutY="219.0" onMouseClicked="#insertNote" prefHeight="142.0" prefWidth="156.0" style="-fx-background-radius: 50%;" styleClass="inser_item" stylesheets="@style.css">
+         <children>
+            <Text fill="WHITE" layoutX="45.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note" wrappingWidth="65.74658203125">
+               <font>
+                  <Font size="27.0" />
+               </font></Text>
+            <Button layoutX="63.0" layoutY="104.0" mnemonicParsing="false" onAction="#insertNote" prefHeight="24.0" prefWidth="29.0" style="-fx-background-radius: 100%;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="417.0" layoutY="219.0" onMouseClicked="#insertEtudiant" prefHeight="142.0" prefWidth="156.0" style="-fx-background-radius: 50%;" styleClass="inser_item" stylesheets="@style.css">
+         <children>
+            <Text fill="WHITE" layoutX="26.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etudiant">
+               <font>
+                  <Font size="27.0" />
+               </font></Text>
+            <Button layoutX="68.0" layoutY="104.0" mnemonicParsing="false" onAction="#insertEtudiant" prefHeight="24.0" prefWidth="29.0" style="-fx-background-radius: 100%;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

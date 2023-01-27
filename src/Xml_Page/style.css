@@ -1,0 +1,17 @@
+
+.btn-home:hover{
+	-fx-background-color:"#0077FF" ;
+}
+.btn-home{
+	-fx-background-color: "#0756B0";
+	-fx-border-radius: 30px;
+}
+#insertbn{
+	-fx-background-color: "#0052ff";
+}
+.inser_item:hover{
+	-fx-background-color:"#0077ff" ;
+		
+}
+
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginControler">
+   <children>
+      <AnchorPane prefHeight="412.0" prefWidth="308.0" style="-fx-background-color: #0598ff;">
+         <children>
+            <ImageView fitHeight="179.0" fitWidth="308.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;">
+               <image>
+                  <Image url="@../img/books.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="adminUserName" layoutX="392.0" layoutY="138.0" onAction="#adminVerification" promptText="user Name" />
+      <PasswordField fx:id="password" layoutX="392.0" layoutY="186.0" onAction="#adminVerification" promptText="Password" />
+      <ImageView fitHeight="102.0" fitWidth="195.0" layoutX="380.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;">
+         <image>
+            <Image url="@../img/users.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="44.0" layoutX="336.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;">
+         <image>
+            <Image url="@../img/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="44.0" layoutX="336.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;">
+         <image>
+            <Image url="@../img/password.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="427.0" layoutY="261.0" mnemonicParsing="false" onAction="#adminVerification" prefHeight="44.0" prefWidth="84.0" style="-fx-background-color: #0598ff;" text="Login" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -3,21 +3,26 @@ package clas;
 import java.util.ArrayList;
 public class Classe {
 
-	
+
+private int id;
 private String className;
 private ArrayList<Etudiant> etudiantList;
 private String filierName;
 
 
-Classe(){
-	this.className="";
-	this.filierName="";
-	this.etudiantList = new ArrayList<Etudiant>();
+Classe(int id,String className,String filierName){
+	this.className=className;
+	this.filierName=filierName;
+	this.id=id;
 }
 Classe(String className,String filierName){
 	this.className=className;
 	this.filierName=filierName;
 	this.etudiantList = new ArrayList<Etudiant>();
+}
+Classe(int id,String className){
+	this.className=className;
+	this.id=id;
 }
 Classe(String className){
 	this.className=className;
@@ -36,6 +41,10 @@ public String getClassName() {
 
 public String getfilier() {
 	return this.filierName;
+}
+
+public int getId() {
+	return this.id;
 }
 
 public void showEtudiant() {
