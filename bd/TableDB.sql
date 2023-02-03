@@ -1,5 +1,5 @@
 /*
-Etudiant(@EtudiantId,LastName,FirstName,#ClassId,#FilierId);
+Etudiant(@EtudiantId,LastName,FirstName,#ClassId);
 Class(@ClassId,ClassName,#FilierId);
 Filier(@FilierId,FilierName);
 Matier(@MatierId,MatierName,coefficient,#FilierId)
@@ -48,10 +48,8 @@ CREATE TABLE Etudiant (
     LastName varchar(25),
     FirstName varchar(25),
     ClassId int NOT NULL,
-    FilierId int NOT NULL,
     CONSTRAINT PRIMARY KEY (EtudiantId),
-    CONSTRAINT FOREIGN KEY (ClassId) REFERENCES Class(ClassId),
-    CONSTRAINT FOREIGN KEY (FilierId) REFERENCES Filier(FilierId)
+    CONSTRAINT FOREIGN KEY (ClassId) REFERENCES Class(ClassId)
 );
 -------------------------------------------------------------------------
 CREATE TABLE Matier (

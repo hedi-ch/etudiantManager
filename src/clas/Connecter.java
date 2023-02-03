@@ -2,6 +2,7 @@ package clas;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
@@ -352,6 +353,62 @@ ArrayList<Filier> fil=new ArrayList<>();
 		}
 	}
 	
+	
+	
+	public void updateEtudiant(String id,String lastName,String firstName,String className) throws SQLException {
+		try {
+		String query="UPDATE Etudiant set LastName = '"+lastName+"', FirstName = '"+firstName+"' , ClassId = "+this.chercheByClassName(className).getId();
+		query+=" where EtudiantId = "+id+";";
+		Statement state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
+		ResultSet result = state.executeQuery(query);
+		result.close();
+		state.close();
+		}
+		catch(Exception ex) {
+			ex.printStackTrace();
+		}
+	} 
+	
+	
+	public void updateNote(String  EtudiantId , String MatierName ,String note) throws SQLException {
+		try {
+		String query="UPDATE Note set note = "+note;
+		query+=" where EtudiantId = "+EtudiantId+" and  MatierId = "+this.chercheMatierByMatierName(MatierName).getIdString()+";";
+		Statement state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
+		ResultSet result = state.executeQuery(query);
+		result.close();
+		state.close();
+		}
+		catch(Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+	
+	
+	
+	public Etudiant cherchEtudiant(String etudiantId) {
+		
+		String query="select EtudiantId,LastName,FirstName,ClassName,FilierName";
+		query+=" from Etudiant e inner join Class c on e.ClassId=c.ClassId";
+		query+=" inner join  Filier f on c.FilierId=f.FilierId";
+		query+=" where e.EtudiantId = "+etudiantId+";";
+		
+		Etudiant etudiant;
+		
+		try{Statement state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
+		ResultSet result = state.executeQuery(query);
+		result.next();
+		etudiant=new Etudiant(result.getString("LastName"),result.getString("FirstName"),result.getString("FilierName"),result.getString("ClassName"));
+		result.close();
+		state.close();
+		return etudiant;
+		}
+		catch(Exception ex) {
+			ex.printStackTrace();
+			return null;
+		}
+		
+	}
 	
 }
 

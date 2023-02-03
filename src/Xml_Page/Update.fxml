@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="629.0" style="-fx-background-color: #0598FF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="196.0" style="-fx-background-color: #0756B0;">
+         <children>
+            <VBox layoutY="123.0" prefHeight="194.0" prefWidth="196.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#insertSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="insert" textFill="WHITE" />
+                  <Button mnemonicParsing="false" onAction="#updateSwitch" prefHeight="48.0" prefWidth="196.0" stylesheets="@style.css" text="update info" textFill="WHITE">
+                     <styleClass>
+                        <String fx:value="btn-home" />
+                        <String fx:value="curent-Btn" />
+                     </styleClass></Button>
+                  <Button mnemonicParsing="false" onAction="#deleteSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="delete" textFill="WHITE" />
+                  <Button mnemonicParsing="false" onAction="#searchSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="search" textFill="WHITE" />
+                  <Button mnemonicParsing="false" onAction="#moyenSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="moyen" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="197.0" prefHeight="412.0" prefWidth="432.0">
+         <children>
+            <AnchorPane prefHeight="413.0" prefWidth="223.0">
+               <children>
+                  <Text layoutX="70.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etudiant Info">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.5844928026199341" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+                  <Button layoutX="49.0" layoutY="186.0" mnemonicParsing="false" onAction="#updateEtudiantInfo" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: transparent; -fx-border-color: #fff; -fx-border-radius: 35px;" text="Etudiant" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane prefHeight="415.0" prefWidth="225.0">
+               <children>
+                  <Text layoutX="64.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etudiant Note">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.5607843399047852" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+                  <Button layoutX="46.0" layoutY="186.0" mnemonicParsing="false" onAction="#updateNote" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: transparent; -fx-border-color: #fff; -fx-border-radius: 30px;" text="Note" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -28,12 +28,23 @@ Etudiant(int id,String Lastname,String Firstname,String filier,String classe){
 	this.filierName=filier;
 	this.classeName=classe;
 }
+Etudiant(String Lastname,String Firstname,String filier,String classe){
+	this.Firstname=Firstname;
+	this.Lastname=Lastname;
+	this.filierName=filier;
+	this.classeName=classe;
+}
 
+public String getFirstName() {
+	return this.Firstname;
+}
 
+public String getLastName() {
+	return this.Lastname;
+}
 public String getName() {
 	return this.Lastname+" "+this.Firstname;
 }
-
 public String getClassName() {
 	return this.classeName;
 }

@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import clas.Connecter;
-import clas.Filier;
 import clas.Matier;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

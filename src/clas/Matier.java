@@ -38,7 +38,7 @@ public double getCof() {
 
 
 public String toString() {
-	return "name: "+this.matierName+" filier name";
+	return this.matierName;
 }
 
 

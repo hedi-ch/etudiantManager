@@ -13,10 +13,10 @@
             <VBox layoutY="123.0" prefHeight="194.0" prefWidth="196.0">
                <children>
                   <Button id="insertbn" mnemonicParsing="false" onAction="#insertSwitch" prefHeight="48.0" prefWidth="196.0" style="-fx-background-radius: 25px;" styleClass="btn-home" stylesheets="@style.css" text="insert" textFill="WHITE" />
-                  <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="update info" textFill="WHITE" />
-                  <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="delete" textFill="WHITE" />
-                  <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="search" textFill="WHITE" />
-                  <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="moyen" textFill="WHITE" />
+                  <Button mnemonicParsing="false" onAction="#updateSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="update info" textFill="WHITE" />
+                  <Button mnemonicParsing="false" onAction="#deleteSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="delete" textFill="WHITE" />
+                  <Button mnemonicParsing="false" onAction="#searchSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="search" textFill="WHITE" />
+                  <Button mnemonicParsing="false" onAction="#moyenSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="moyen" textFill="WHITE" />
                </children>
             </VBox>
          </children>

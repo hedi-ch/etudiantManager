@@ -21,12 +21,17 @@ public class HomeController {
 	}
 	
 	public void updateSwitch(ActionEvent e) throws IOException {
+		try {
 		Parent root = FXMLLoader.load(getClass().getResource("../Xml_Page/Update.fxml"));
 		Stage stage =(Stage)((Node)e.getSource()).getScene().getWindow();
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("../Xml_Page/style.css").toExternalForm());
 		stage.setScene(scene);
 		stage.show();
+		}
+		catch(Exception ex) {
+			ex.printStackTrace();
+		}
 	}
 	
 	public void deleteSwitch(ActionEvent e) throws IOException {

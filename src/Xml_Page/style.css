@@ -9,6 +9,9 @@
 #insertbn{
 	-fx-background-color: "#0052ff";
 }
+.curent-Btn{
+	-fx-background-color: "#0052ff";
+}
 .inser_item:hover{
 	-fx-background-color:"#0077ff" ;
 		
