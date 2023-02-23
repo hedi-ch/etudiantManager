@@ -36,7 +36,7 @@
             <Image url="@../img/password.png" />
          </image>
       </ImageView>
-      <Button layoutX="427.0" layoutY="261.0" mnemonicParsing="false" onAction="#adminVerification" prefHeight="44.0" prefWidth="84.0" style="-fx-background-color: #0598ff;" text="Login" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+      <Button fx:id="button" layoutX="427.0" layoutY="261.0" mnemonicParsing="false" onAction="#adminVerification" prefHeight="44.0" prefWidth="84.0" style="-fx-background-color: #0598ff;" text="Login" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
          <font>
             <Font size="14.0" />
          </font>

@@ -18,3 +18,12 @@
 }
 
 
+.btn-cercle{
+	-fx-background-color: transparent ;
+	-fx-background-radius: 100%;
+	-fx-border-radius: 100%;
+	-fx-border-color: "#fff";
+	-fx-border-width: 5px;
+
+
+}

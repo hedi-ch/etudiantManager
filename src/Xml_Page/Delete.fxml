@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="629.0" style="-fx-background-color: #0598FF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="196.0" style="-fx-background-color: #0756B0;">
+         <children>
+            <VBox layoutY="123.0" prefHeight="194.0" prefWidth="196.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#insertSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="insert" textFill="WHITE" />
+                  <Button mnemonicParsing="false" onAction="#updateSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="update info" textFill="WHITE" />
+                  <Button mnemonicParsing="false" onAction="#deleteSwitch" prefHeight="48.0" prefWidth="196.0" stylesheets="@style.css" text="delete" textFill="WHITE">
+                     <styleClass>
+                        <String fx:value="btn-home" />
+                        <String fx:value="curent-Btn" />
+                     </styleClass></Button>
+                  <Button mnemonicParsing="false" onAction="#searchSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="search" textFill="WHITE" />
+                  <Button mnemonicParsing="false" onAction="#moyenSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="moyen" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Button layoutX="196.0" mnemonicParsing="false" onAction="#DeleteEtudiant" prefHeight="138.0" prefWidth="138.0" styleClass="btn-cercle" stylesheets="@style.css" text="Etudiant" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9482410550117493" green="0.8827908039093018" blue="0.8827908039093018" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button layoutX="491.0" layoutY="152.0" mnemonicParsing="false" onAction="#DeleteFilier" prefHeight="138.0" prefWidth="138.0" styleClass="btn-cercle" stylesheets="@style.css" text="filier" textFill="WHITE" />
+      <Button layoutX="196.0" layoutY="160.0" mnemonicParsing="false" onAction="#DeleteNote" prefHeight="138.0" prefWidth="138.0" styleClass="btn-cercle" stylesheets="@style.css" text="note" textFill="WHITE" />
+      <Button layoutX="491.0" mnemonicParsing="false" onAction="#DeleteClass" prefHeight="138.0" prefWidth="138.0" styleClass="btn-cercle" stylesheets="@style.css" text="class" textFill="WHITE" />
+      <Button layoutX="343.0" layoutY="298.0" mnemonicParsing="false" onAction="#DeleteMatier" prefHeight="115.0" prefWidth="138.0" styleClass="btn-cercle" stylesheets="@style.css" text="matier" textFill="WHITE" />
+   </children>
+</AnchorPane>

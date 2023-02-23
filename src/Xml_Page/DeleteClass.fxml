@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="629.0" style="-fx-background-color: #0598FF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteClassController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="196.0" style="-fx-background-color: #0756B0;">
+         <children>
+            <VBox layoutY="123.0" prefHeight="194.0" prefWidth="196.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#insertSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="insert" textFill="WHITE" />
+                  <Button mnemonicParsing="false" onAction="#updateSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="update info" textFill="WHITE" />
+                  <Button mnemonicParsing="false" onAction="#deleteSwitch" prefHeight="48.0" prefWidth="196.0" stylesheets="@style.css" text="delete" textFill="WHITE">
+                     <styleClass>
+                        <String fx:value="btn-home" />
+                        <String fx:value="curent-Btn" />
+                     </styleClass></Button>
+                  <Button mnemonicParsing="false" onAction="#searchSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="search" textFill="WHITE" />
+                  <Button mnemonicParsing="false" onAction="#moyenSwitch" prefHeight="48.0" prefWidth="196.0" styleClass="btn-home" stylesheets="@style.css" text="moyen" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="className" layoutX="196.0" layoutY="65.0" prefHeight="24.0" prefWidth="135.0" promptText="className" />
+      <Button fx:id="Delete" disable="true" layoutX="331.0" layoutY="194.0" mnemonicParsing="false" text="delete Class" />
+      <TextArea fx:id="result" layoutX="196.0" layoutY="251.0" prefHeight="161.0" prefWidth="433.0" promptText="result" />
+   </children>
+</AnchorPane>

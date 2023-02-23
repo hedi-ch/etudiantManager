@@ -410,6 +410,45 @@ ArrayList<Filier> fil=new ArrayList<>();
 		
 	}
 	
-}
-
+	public void DeleteNoteByEtudiantId(String  EtudiantId) throws SQLException {
+		try {
+		String query="DELETE FROM Note order WHERE EtudiantId = "+EtudiantId+";";
+		Statement state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
+		ResultSet result = state.executeQuery(query);
+		result.close();
+		state.close();
+		}
+		catch(Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+	
+	public void DeleteEtudiantByEtudiantId(String  EtudiantId) throws SQLException {
+		
+		try {
+		DeleteNoteByEtudiantId(EtudiantId);
+		String query="DELETE FROM Etudiant WHERE EtudiantId = "+EtudiantId+" ;";
+		Statement state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
+		ResultSet result = state.executeQuery(query);
+		result.close();
+		state.close();
+		}
+		catch(Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+	
+	public void DeleteClass(String ClassId) {
+		try {
+			String query="DELETE FROM Class WHERE ClassId = "+ClassId+" ;";
+			Statement state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
+			ResultSet result = state.executeQuery(query);
+			result.close();
+			state.close();
+			}
+			catch(Exception ex) {
+				ex.printStackTrace();
+			}
+	}
+	}
 

@@ -46,6 +46,9 @@ public String getfilier() {
 public int getId() {
 	return this.id;
 }
+public String getIdString() {
+	return ""+this.id;
+}
 
 public void showEtudiant() {
 	for(Etudiant e:etudiantList) {
